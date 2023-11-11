@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"declaration": true,
+		"moduleResolution": "Node",
+		"target": "ESNext",
+		"module": "ESNext",
+		"outDir": "dist"
+	},
+	"include": ["src/**/*", "global.d.ts"]
+}
