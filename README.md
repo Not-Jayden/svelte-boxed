@@ -1,6 +1,8 @@
 # 📦 svelte-boxed
 
-A lightweight utility function for Svelte to create reactive, boxed values with shallow reactivity using Svelte runes.
+A lightweight utility function for Svelte to create reactive, boxed values with shallow reactivity using [Svelte runes](https://svelte.dev/blog/runes).
+
+Inspired by/stolen from [this tweet](https://twitter.com/Rich_Harris/status/1704889098169709019) by Rich Harris, amongst the other conversations around this utility function in the Svelte Discord server.
 
 ## 🚀 Installation
 
@@ -71,7 +73,7 @@ settings.value = { ...settings.value, theme: 'light' }; // Triggers a re-render
 
 ## 🔄 Aliases
 
-The package also exports the following aliases based on your preference:
+The package also exports the following aliases based on your personal naming preference:
 
 ```javascript
 import { ref, writable } from 'svelte-boxed';
