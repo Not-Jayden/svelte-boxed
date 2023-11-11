@@ -1,8 +1,8 @@
-# svelte-boxed
+# 📦 svelte-boxed
 
 A lightweight utility function for Svelte to create reactive, boxed values with shallow reactivity using Svelte runes.
 
-## Installation
+## 🚀 Installation
 
 ```bash
 # Using npm
@@ -18,7 +18,7 @@ pnpm add svelte-boxed
 bun add svelte-boxed
 ```
 
-## Usage
+## 💡 Usage
 
 The `svelte-boxed` package exports a function `boxed` that wraps a value in a reactive container. This container provides a `.value` property for accessing and modifying the value.
 
@@ -38,7 +38,7 @@ counter.value = 5; // updates the value and triggers reactivity
 console.log(counter.value); // outputs: 5
 ```
 
-### Advanced Usage
+### Limitations
 
 Remember, reactivity is only triggered when the `.value` property is set to a new value. Changes to object properties or array elements inside the value do not trigger a re-render.
 
@@ -49,7 +49,7 @@ complexCounter.value.count++; // Does not trigger a re-render
 complexCounter.value = { count: complexCounter.value.count + 1 }; // Triggers a re-render
 ```
 
-## API
+## 🛠️ API
 
 ### `boxed`
 
@@ -66,7 +66,7 @@ complexCounter.value = { count: complexCounter.value.count + 1 }; // Triggers a 
     - `get value()`: Returns the current value.
     - `set value(v: T)`: Sets a new value and triggers reactivity.
 
-## Aliases
+## 🔄 Aliases
 
 The package also exports the following aliases based on your preference:
 
@@ -79,6 +79,6 @@ let myWritable = writable('Hello');
 
 - `ref` and `writable` are both aliases for `boxed`.
 
-## License
+## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
