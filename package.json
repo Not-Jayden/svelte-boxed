@@ -6,6 +6,7 @@
 		"url": "https://www.github.com/Not-Jayden"
 	},
 	"main": "src/index.svelte.ts",
+	"license": "MIT",
 	"scripts": {
 		"pretty": "prettier --write .",
 		"clean": "rimraf dist",
