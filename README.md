@@ -43,10 +43,13 @@ console.log(counter.value); // outputs: 5
 Remember, reactivity is only triggered when the `.value` property is set to a new value. Changes to object properties or array elements inside the value do not trigger a re-render.
 
 ```javascript
-let complexCounter = boxed({ count: 0 });
+let settings = boxed({ theme: 'dark', notifications: true });
 
-complexCounter.value.count++; // Does not trigger a re-render
-complexCounter.value = { count: complexCounter.value.count + 1 }; // Triggers a re-render
+// ❌ Attempt to modify a property inside the object
+settings.value.theme = 'light'; // Does not trigger a re-render
+
+// ✅ Reassign settings.value to trigger a re-render
+settings.value = { ...settings.value, theme: 'light' }; // Triggers a re-render
 ```
 
 ## 🛠️ API
