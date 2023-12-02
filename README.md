@@ -1,5 +1,9 @@
 > [!WARNING]
-> There is probably no need to use this library any more as a result of [Svelte 5 changing to become deeply reactive by default](https://github.com/sveltejs/svelte/pull/9739), and allowing directly exporting state values as `const counter = $state({value});`. This repository will likely be archived, pending where things land with Svelte 5 and if there is still a use case for it.
+> There is probably no need to use this library any more as a result of [Svelte 5 changing to become deeply reactive by default](https://github.com/sveltejs/svelte/pull/9739), and allowing directly exporting state values. i.e.
+> ```
+> export const counter = $state({value});
+> ```
+> This repository will likely be archived, pending where things land with Svelte 5 and if there is still a use case for it.
 
 # 📦 svelte-boxed
 
